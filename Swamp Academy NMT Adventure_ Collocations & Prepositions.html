@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swamp Academy NMT Adventure: Collocations &amp; Prepositions</title>
+<style>
+:root{--bg:#fff1d6;--bg2:#ffdfb0;--card:#fffaf0;--ink:#5a3a1c;--gold:#e8a33d;--soft:#fde3a7;--ok:#bfe8b0;--no:#f8b9a8;--blue:#d3e8f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#2b1d12;--bg2:#3a2615;--card:#3b2a1a;--ink:#f6e3c4;--soft:#5a4020;--ok:#3f6b34;--no:#7a3a2a;--blue:#2d4658}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font:19px/1.6 "Trebuchet MS",Verdana,sans-serif;color:var(--ink);background-color:var(--bg);background-image:linear-gradient(var(--bg),var(--bg2));background-attachment:fixed}
+main{max-width:860px;margin:auto;padding:12px}
+.hero{text-align:center;padding:20px 8px}
+h1{font:bold 2.1em/1.2 Georgia,serif;margin:.2em 0}
+.cast{font-size:1.9em;letter-spacing:6px}
+#st{display:inline-block;background:var(--soft);border-radius:999px;padding:4px 18px;font-weight:bold;margin:8px}
+section{background:var(--card);border:3px dashed var(--gold);border-radius:26px;padding:20px;margin:30px 0;position:relative}
+section:after{content:attr(data-s);position:absolute;right:14px;top:-22px;font-size:2.3em;transform:rotate(12deg)}
+h2{margin:0 0 8px;font:bold 1.45em Georgia,serif}
+.bub{display:flex;gap:12px;align-items:flex-start;margin:10px 0}
+.av{font-size:2.6em;text-align:center;line-height:1}.av small{display:block;font-size:.3em;font-weight:bold}
+.bub p{background:var(--soft);border-radius:20px;padding:10px 16px;margin:0;position:relative}
+.bub p:before{content:"";position:absolute;left:-9px;top:16px;border:7px solid transparent;border-left:0;border-right-color:var(--soft)}
+.ins{font-weight:bold;color:#b86a10}
+ol{list-style:none;counter-reset:n;padding:0}
+li{counter-increment:n;margin:10px 0;padding:8px 12px 8px 46px;position:relative;border-radius:14px;background:rgba(232,163,61,.12)}
+li:before{content:counter(n);position:absolute;left:10px;top:8px;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#3b2410;text-align:center;font-weight:bold;line-height:28px}
+.txt{line-height:2.2}
+input.g,select.g{font:inherit;color:#333;background:#fff;border:2px solid var(--gold);border-radius:10px;padding:1px 6px;max-width:100%}
+.drop{display:inline-block;min-width:4.5em;min-height:1.5em;vertical-align:bottom;text-align:center;padding:0 8px;background:var(--blue);border:2px dashed var(--gold);border-radius:10px;font-weight:bold;cursor:pointer}
+.chip,.tag{display:inline-block;margin:4px;padding:3px 14px;background:var(--gold);color:#3b2410;border-radius:999px;font-weight:bold}
+.chip{cursor:grab;user-select:none}.chip.sel{outline:3px solid #c0392b}.tag{background:var(--soft);color:var(--ink)}.tag.on{background:var(--ok)}
+.q{display:block;margin-top:6px;border-radius:12px}
+.q button{font:inherit;margin:3px;padding:4px 16px;border:2px solid var(--gold);background:#fff;color:#333;border-radius:12px;cursor:pointer}
+.q button.sel{background:var(--gold);font-weight:bold}
+.ok{background:var(--ok)!important;border-color:#4a9a3a!important}.no{background:var(--no)!important;border-color:#c0392b!important}
+.b{font:inherit;font-weight:bold;background:var(--gold);color:#3b2410;border:0;border-radius:999px;padding:8px 22px;margin:4px;cursor:pointer}.alt{background:var(--soft);color:var(--ink)}
+.sc{font-weight:bold;margin-left:8px}
+textarea{width:100%;box-sizing:border-box;min-height:170px;font:inherit;border:3px solid var(--gold);border-radius:16px;padding:10px;background:#fff;color:#333}
+details{background:var(--soft);border-radius:16px;padding:8px 16px;margin:12px 0}summary{cursor:pointer;font-weight:bold}
+u{text-decoration:underline wavy #c0392b}
+</style></head><body><main>
+<div class="hero"><div class="cast">🐱🟢🫏👸🦁🦓🦛🦒</div>
+<h1>🍂 Swamp Academy: NMT Adventure 🍂</h1>
+<p>Collocations &amp; Prepositions · Grade 11 · B1–B2</p>
+<div class="bub" style="justify-content:center"><p>You’ve joined Puss in Boots’ cosy NMT club! Shrek, Donkey, Fiona and the Madagascar gang will guide you through 10 quests. Score 80% or more in a quest to win a ⭐.</p></div>
+<div id="st"></div>
+<details><summary>📌 The 23 target phrases</summary><div id="pl"></div></details></div>
+<div id="app"></div>
+<details id="keyd"><summary>🔑 Answer key (try everything first!)</summary><div id="key"></div></details>
+</main>
+<script>
+const D=(s,r=document)=>r.querySelector(s),sh=a=>[...a].sort(()=>Math.random()-.5);
+const gap={
+drop:a=>`<span class="drop g" data-a="${a}"></span>`,
+inp:a=>`<input class="g" data-a="${a}" size="${Math.max(a.length+1,5)}" autocomplete="off" autocapitalize="off" spellcheck="false">`,
+sel:a=>{const o=a.split('/');return `<select class="g" data-a="${o[0]}"><option></option>${sh(o).map(x=>`<option>${x}</option>`).join('')}</select>`}};
+const L=(it,f)=>`<ol>${it.map(([s,a])=>`<li>${f(s,a)}</li>`).join('')}</ol>`;
+const mcq=(s,a)=>{const o=a.split('/');return s.replace('__','<b>_____</b>')+`<span class="q g" data-a="${o[0]}">${sh(o).map(x=>`<button>${x}</button>`).join('')}</span>`};
+const cl=t=>`<p class="txt">${t.replace(/\[\[(.+?)\]\]/g,(m,a)=>a.includes('/')?gap.sel(a):gap.inp(a))}</p>`;
+const PH=[['amazed by',/amazed by/i],['careful with',/careful with/i],['crowded with',/crowded with/i],['fed up with',/fed up with/i],['ready for',/ready for/i],['satisfied with',/satisfied with/i],['a description of',/description of/i],['a failure in',/failure in/i],['a search for',/search(es|ed|ing)? for/i],['a solution to',/solution to/i],['distinguish between',/distinguish\w* between/i],['experiment with',/experiment(s|ed|ing)? with/i],['glance at',/glanc(e|es|ed|ing) at/i],['hear about',/(hear|heard|hears|hearing) about/i],['hear from',/(hear|heard|hears|hearing) from/i],['join in',/join(s|ed|ing)? in/i],['regard sb/sth as',/regard(s|ed|ing)? \w+( \w+)? as/i],['remind sb about sth',/remind(s|ed|ing)? \w+ about/i],['remind sb of sb/sth',/remind(s|ed|ing)? \w+ of/i],['smile at',/smil(e|es|ed|ing) at/i],['specialise in',/special(is|iz)\w* in/i],['stare at',/star(e|es|ed|ing) at/i],['vote for/against',/vot(e|es|ed|ing) (for|against)/i]];
+const pool=['by','with','at','in','for','between','against','as','about','of','from','to'].map(c=>`<span class="chip" draggable="true">${c}</span>`).join('');
+const R=k=>(s,a)=>s.replace('__',gap[k](a));
+const S=[
+{id:'d',t:'Quest 1 · Drag & Drop',em:'🍁',av:['🐱','Puss'],chk:1,say:'“Welcome to the Swamp Academy NMT Club! Don’t be fed up with grammar – be ready for an adventure!”',ins:'Drag a word into each gap. On a phone: tap a word, then tap the gap. Tap a filled gap to clear it.',
+b:`<div>${pool}</div>`+L([["Puss was amazed __ the number of students at the NMT club.","by"],["The school hall was crowded __ teenagers on results day.","with"],["Donkey is always ready __ a new adventure.","for"],["Be careful __ your phone near the water, Donkey!","with"],["Most students voted __ the longer school day.","against"],["It is not easy to distinguish __ real news and fake news online.","between"],["Marty smiled __ the camera and posted a selfie.","at"],["Gloria wants to specialise __ marine biology at university.","in"],["Melman stared __ the screen in horror when his battery died.","at"],["Everyone joined __ the beach clean-up on Saturday.","in"],["Shrek regards the swamp __ his real home.","as"],["Have you heard __ our new eco-club?","about"]],R('drop'))},
+{id:'f',t:'Quest 2 · Fill in the Gaps',em:'🌿',av:['🟢','Shrek'],chk:1,say:'“I was amazed by how many students joined our eco-project. Now we’re on a search for a solution to the plastic problem!”',ins:'Type ONE word (a preposition) in each gap.',
+b:L([["Puss wrote a short description __ his dream job for the school magazine.","of"],["Their failure __ the mock test taught them to plan their time better.","in"],["The students are on a search __ a better way to recycle plastic.","for"],["We need a solution __ the noise problem in the school canteen.","to"],["I haven’t heard __ my pen friend from Canada for weeks.","from"],["This photo reminds me __ our trip to the Carpathians.","of"],["Please remind me __ the deadline for the project tomorrow.","about"],["Don’t stare __ people on the bus, Donkey. It’s rude!","at"],["Fiona was satisfied __ her results in the English test.","with"],["Teenagers often experiment __ different hairstyles and social media filters.","with"],["She glanced __ her watch and ran to catch the train.","at"],["I’m fed up __ endless group chats at night; I just want to sleep.","with"]],R('inp'))},
+{id:'m',t:'Quest 3 · Matching',em:'🧩',av:['🫏','Donkey'],chk:1,say:'“Be careful with these halves! I regard prepositions as tiny monsters, but you can beat them.”',ins:'Choose the correct ending for each beginning.',
+b:(()=>{const it=[["Shrek is satisfied with","his quiet life in the swamp."],["The market was crowded with","tourists and street musicians."],["Marty was amazed by","the speed of the new high-speed train."],["Gloria is ready for","her final biology exam."],["Be careful with","your passwords on social media."],["We read a description of","the ideal volunteer in the advert."],["His search for","a part-time job took three weeks."],["Their failure in","the first round made them work harder."]],r=sh(it.map(x=>x[1]));return L(it,(s,a)=>`${s} <select class="g" data-a="${a}"><option></option>${r.map(x=>`<option>${x}</option>`).join('')}</select>`)})()},
+{id:'q',t:'Quest 4 · Multiple Choice',em:'🎯',av:['🦁','Alex'],chk:1,say:'“Don’t stare at the clock! Tap the best answer – and if you hear about a quiz, join in!”',ins:'Tap the correct word.',
+b:L([["The students voted __ the new timetable because lessons started at 7 a.m.","against/for/about/in"],["It is hard to distinguish __ a hoax and the truth online.","between/among/with/for"],["Alex sent me an email, so I finally heard __ him.","from/with/by/to"],["Have you heard __ the new volunteer project at our school?","about/from/with/at"],["This song reminds me __ my summer holidays by the sea.","of/to/for/with"],["Please remind me __ my English homework before I leave.","about/with/at/by"],["Many teenagers regard social media __ a waste of time.","as/like/for/to"],["Alex glanced __ the clock to check how much time he had left.","at/to/on/over"],["She specialises __ web design and works for a start-up.","in/at/on/for"],["Please vote __ our project in the school contest!","for/by/with/of"]],mcq)},
+{id:'s',t:'Quest 5 · Sentence Completion',em:'✏️',av:['🦓','Marty'],chk:1,say:'“Our Madagascar photos remind me of home. The beach was crowded with penguins!”',ins:'Write the whole phrase from the box in each gap.',
+b:'<div>'+['fed up with','ready for','amazed by','satisfied with','careful with','crowded with','(a) failure in','(a) search for','(a) description of','(a) solution to'].map(x=>`<span class="tag">${x}</span>`).join('')+'</div>'+L([["Fiona is __ the noise in the city and dreams of a quiet village.","fed up with"],["After months of revision, Gloria finally felt __ the NMT.","ready for"],["We were all __ the colourful fireworks at the festival.","amazed by"],["Our chemistry teacher was very __ our experiment results.","satisfied with"],["You must be __ the glue, Donkey! It’s very sticky.","careful with"],["The streets were __ tourists during the music festival.","crowded with"],["Their __ the first match surprised nobody; they hadn’t trained.","failure in"],["The team’s __ a new captain ended after a week.","search for"],["Can you give the police a __ the missing bag?","description of"],["Scientists are working on a __ plastic pollution.","solution to"]],R('inp'))},
+{id:'e',t:'Quest 6 · Error Detective',em:'🔍',av:['🦛','Gloria'],chk:1,say:'“Spot the mistake! I’m ready for anything, but I’m fed up with silly errors.”',ins:'Each sentence has one wrong preposition (underlined). Type the correct one.',
+b:L([["Puss was amazed <u>from</u> the beautiful castle.","by"],["Donkey is fed up <u>about</u> the rain.","with"],["She specialises <u>at</u> French literature.","in"],["Marty smiled <u>to</u> the tourists.","at"],["We need a solution <u>for</u> this problem.","to"],["Alex glanced <u>to</u> his phone during the break.","at"],["The room is crowded <u>of</u> students.","with"],["Please remind me <u>for</u> the meeting.","about"],["Gloria is ready <u>to</u> the final exam.","for"],["They joined <u>on</u> the volunteer day.","in"],["I’m satisfied <u>of</u> my progress.","with"],["We experimented <u>on</u> different recipes in the cooking club.","with"]],(s,a)=>s+' → '+gap.inp(a))},
+{id:'r',t:'Quest 7 · Reading Task',em:'📖',av:['👸','Fiona'],chk:1,say:'“Read Puss’s blog and choose the correct phrase for each gap.”',ins:'Pick the best option from each drop-down list.',
+b:cl('<b>Puss in Boots’ Study Blog.</b> Last Monday I [[heard from/heard about/heard of]] Fiona, my old friend. She asked me to [[join in/join on/join at]] a beach clean-up. I was [[fed up with/fed up of/fed up by]] sitting at my desk, so I said yes! The beach was [[crowded with/crowded by/crowded of]] volunteers. I glanced [[at/to/on]] my watch and saw we were late, but Fiona just [[smiled at/smiled to/smiled for]] me. “Relax,” she said, “we’re [[ready for/ready to/ready of]] anything.” In the evening I wrote a [[description of/description about/description for]] the day for school, and my teacher was [[satisfied with/satisfied of/satisfied by]] it!')},
+{id:'sp',t:'Quest 8 · Speaking Time',em:'🎤',av:['🦒','Melman'],say:'“Don’t be shy – speak out loud! Tick each card when you’ve answered it.”',ins:'Talk to a partner (or to yourself!) for 30–60 seconds per card. Use the phrases in bold.',
+b:'<ol id="sp">'+["Describe a place that was <b>crowded with</b> people. What were you <b>amazed by</b>?","What are you <b>fed up with</b>? What are you <b>ready for</b> this year?","Have you ever <b>experimented with</b> a new hobby? What would you like to <b>specialise in</b> after school?","Who did you last <b>hear from</b>? Did you <b>hear about</b> any good news this week?","What do you <b>regard as</b> the biggest problem at school? Suggest <b>a solution to</b> it. Would you <b>vote for</b> or <b>against</b> a shorter school day?","Describe <b>a failure in</b> your life that taught you something. Does anything <b>remind you of</b> it? Who <b>reminds you about</b> deadlines?","What is your dream job? Give <b>a description of</b> it and say how you plan to start <b>the search for</b> it.","How can you <b>distinguish between</b> a true friend and a fake one? Why do people <b>stare at</b> screens or <b>glance at</b> their phones so often? When did you last <b>join in</b> and <b>smile at</b> a stranger?"].map(x=>`<li><label><input type="checkbox"> ${x}</label></li>`).join('')+'</ol><p class="sc" id="spc"></p>'},
+{id:'w',t:'Quest 9 · Writing Challenge',em:'📝',av:['🐱','Puss'],say:'“Write a blog post called ‘My Volunteer Weekend’. Try to use at least 8 target phrases!”',ins:'Write 60–90 words. The phrases light up green when you use them correctly.',
+b:'<textarea id="wr" placeholder="Last Saturday I joined in…"></textarea><p id="wc"></p><div id="ph"></div>'},
+{id:'n',t:'Final · NMT Challenge',em:'🏆',av:['🏆','The gang'],chk:1,say:'“Final quest! All 23 target phrases are hiding in this story. Type one word in each gap.”',ins:'Complete the story with the correct prepositions (24 gaps).',
+b:cl('<b>The Big Day.</b> The NMT hall was crowded [[with]] nervous teenagers. Puss was ready [[for]] the test, and Shrek was amazed [[by]] his courage. “Be careful [[with]] the time!” whispered Donkey. Alex glanced [[at]] the clock and smiled [[at]] Marty. Gloria was fed up [[with]] boring tests, but she felt satisfied [[with]] her revision. In the writing task, Melman had to give a description [[of]] his dream job. “I want to specialise [[in]] robotics,” he wrote. Puss stared [[at]] the next question: how do you distinguish [[between]] fact and opinion? It reminded him [[of]] his lessons with Fiona. He remembered his failure [[in]] the mock exam and stayed calm.</p><p class="txt">After the exam, Donkey asked, “Did you hear [[about]] the new volunteer club?” “Yes, I heard [[from]] Shrek yesterday,” said Marty. “The club’s search [[for]] new members continues, and we need a solution [[to]] the plastic problem at school.” “I’ll vote [[for]] your idea,” said Gloria, “but my brother will vote [[against]] it.” “Join [[in]]!” laughed Alex. “Remind me [[about]] the first meeting.” “Let’s experiment [[with]] solar lamps,” said Puss. “Everyone regards you [[as]] our hero.”')}
+];
+const N=S.filter(s=>s.chk).length,done={};let cur=null;
+D('#app').innerHTML=S.map(s=>`<section id="${s.id}" data-s="${s.em}"><h2>${s.t}</h2><div class="bub"><div class="av">${s.av[0]}<small>${s.av[1]}</small></div><p>${s.say}</p></div><p class="ins">${s.ins}</p>${s.b}${s.chk?`<p><button class="b" onclick="chk('${s.id}')">Check ✔</button><button class="b alt" onclick="rst('${s.id}')">Try again ↺</button><span class="sc"></span></p>`:''}</section>`).join('');
+D('#pl').innerHTML=PH.map(p=>`<span class="tag">${p[0]}</span>`).join('');
+D('#ph').innerHTML=PH.map(p=>`<span class="tag">${p[0]}</span>`).join('');
+const val=e=>(e.matches('.drop')?e.textContent:e.matches('.q')?(e.querySelector('.sel')||{}).textContent:e.value)||'';
+function upd(){const k=Object.values(done).filter(Boolean).length;D('#st').textContent='⭐'.repeat(k)+'☆'.repeat(N-k)+'  '+k+'/'+N+(k==N?' 🏆 Champion!':'')}
+function chk(id){const s=D('#'+id);let n=0,t=0;s.querySelectorAll('.g').forEach(e=>{t++;const ok=val(e).trim().replace(/\s+/g,' ').toLowerCase()==e.dataset.a.toLowerCase();n+=ok;e.classList.toggle('ok',ok);e.classList.toggle('no',!ok)});const r=n/t;D('.sc',s).textContent=(r==1?'🎉 ':r>=.8?'😺 ':r>=.5?'🙂 ':'💪 ')+n+'/'+t+(r>=.8?' ⭐ Quest complete!':' – check the red boxes and try again!');done[id]=r>=.8;upd()}
+function rst(id){const s=D('#'+id);s.querySelectorAll('.g').forEach(e=>{e.classList.remove('ok','no');if(e.matches('.drop'))e.textContent='';else if(e.matches('.q'))e.querySelectorAll('.sel').forEach(b=>b.classList.remove('sel'));else e.value=''});D('.sc',s).textContent='';done[id]=false;upd()}
+document.addEventListener('click',e=>{const t=e.target;
+if(t.matches('.chip')){document.querySelectorAll('.chip.sel').forEach(c=>c.classList.remove('sel'));t.classList.add('sel');cur=t}
+else if(t.matches('.drop')){t.textContent=cur&&cur.classList.contains('sel')?cur.textContent:''}
+else if(t.matches('.q button')){t.parentNode.querySelectorAll('button').forEach(b=>b.classList.remove('sel'));t.classList.add('sel')}});
+document.addEventListener('dragstart',e=>{if(e.target.matches('.chip'))e.dataTransfer.setData('text',e.target.textContent)});
+document.addEventListener('dragover',e=>{if(e.target.matches('.drop'))e.preventDefault()});
+document.addEventListener('drop',e=>{if(e.target.matches('.drop')){e.preventDefault();e.target.textContent=e.dataTransfer.getData('text')}});
+document.addEventListener('change',e=>{if(e.target.matches('#sp input')){const n=document.querySelectorAll('#sp input:checked').length;D('#spc').textContent=n==8?'🎤🎉 8/8 – brilliant speaker!':'🎤 '+n+'/8 cards done'}});
+D('#wr').addEventListener('input',e=>{const v=e.target.value,w=(v.trim().match(/\S+/g)||[]).length;let n=0;D('#ph').querySelectorAll('.tag').forEach((c,i)=>{const on=PH[i][1].test(v);c.classList.toggle('on',on);n+=on});D('#wc').textContent=w+' words · '+n+'/23 phrases used'+(n>=8&&w>=60?' 🎉 Challenge complete!':'')});
+D('#key').innerHTML=S.filter(s=>s.chk).map(s=>`<p><b>${s.t}</b><br>${[...D('#'+s.id).querySelectorAll('.g')].map((e,i)=>`${i+1}. ${e.dataset.a}`).join(' · ')}</p>`).join('')+'<p><b>Quest 8 · Speaking</b><br>Answers vary – check that the bold phrases are used with the correct prepositions.</p><p><b>Quest 9 · Writing (model)</b><br>Last Saturday I joined in a beach clean-up. I was amazed by the number of volunteers, and the beach was crowded with smiling people. I had been fed up with studying, so I was ready for some fresh air. A volunteer gave us a description of the rubbish to collect, and we were careful with the glass. I’m satisfied with our work, and I regard it as a good solution to boring weekends!</p>';
+upd();
+</script></body></html>
